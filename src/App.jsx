@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Formulario from './Formulario';
+import Formulario from './formulario';
 import Galeria from './Galeria';
 
 function App() {
@@ -28,7 +28,9 @@ function App() {
 
   return (
     <div className='min-h-screen bg-[#EFF6FF] flex flex-col lg:flex-row items-center gap-5 md:gap-10 overflow-x-hidden'>
-      <Formulario adicionarImagens={adicionarImagens}/>
+      <Formulario 
+      adicionarImagens={adicionarImagens}
+      />
       <Galeria 
       imagens={imagens}
       excluirImagem={excluirImagem}
