@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Formulario from './formulario';
+import Formulario from './Formulario';
 import Galeria from './Galeria';
 
 function App() {
