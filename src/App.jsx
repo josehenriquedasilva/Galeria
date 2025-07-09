@@ -26,6 +26,10 @@ function App() {
     setImagens(novasImagens)
   }
 
+  function reordenarImagens(novasImagems) {
+    setImagens(novasImagems)
+  }
+
   return (
     <div className='min-h-screen bg-[#EFF6FF] flex flex-col lg:flex-row items-center gap-5 md:gap-10 overflow-x-hidden'>
       <Formulario
@@ -34,6 +38,7 @@ function App() {
       <Galeria 
       imagens={imagens}
       excluirImagem={excluirImagem}
+      onReorder={reordenarImagens}
       />
     </div>
   )
